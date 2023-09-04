@@ -28,32 +28,35 @@ const Answers = ({ submit, isLastQuestion }: Props) => {
   };
 
   return (
-    <div className="d-flex flex-column align-items-center justify-content-center h-100 answers-box">
-      <div className="d-flex flex-row justify-content-between align-items-center w-100">
-        {answers.map((item) => {
-          return (
-            <div
-              key={`key-${item}`}
-              id={`circle-${item}`}
-              className="circle-answer"
-              onClick={() => answerSelect(item)}
-              onMouseOut={() =>
-                document
-                  .getElementById(`circle-${item}`)
-                  ?.classList.remove("half-opacity")
-              }
-              onMouseOver={() =>
-                document
-                  .getElementById(`circle-${item}`)
-                  ?.classList.add("half-opacity")
-              }
-            />
-          );
-        })}
-      </div>
-      <div className="d-flex flex-row justify-content-between align-items-center w-100 mt-3">
-        <span className="answer-hint">Disagree</span>
-        <span className="answer-hint">Agree</span>
+    <div className="d-flex flex-column align-items-center justify-content-between h-100 answers-box">
+      <div />
+      <div className="d-flex flex-column w-100">
+        <div className="d-flex flex-row justify-content-between align-items-center w-100">
+          {answers.map((item) => {
+            return (
+              <div
+                key={`key-${item}`}
+                id={`circle-${item}`}
+                className="circle-answer"
+                onClick={() => answerSelect(item)}
+                onMouseOut={() =>
+                  document
+                    .getElementById(`circle-${item}`)
+                    ?.classList.remove("half-opacity")
+                }
+                onMouseOver={() =>
+                  document
+                    .getElementById(`circle-${item}`)
+                    ?.classList.add("half-opacity")
+                }
+              />
+            );
+          })}
+        </div>
+        <div className="d-flex flex-row justify-content-between align-items-center w-100 mt-3">
+          <span className="answer-hint">Disagree</span>
+          <span className="answer-hint">Agree</span>
+        </div>
       </div>
       <div className="submit-buttons-container px-4">
         {isLastQuestion ? (
