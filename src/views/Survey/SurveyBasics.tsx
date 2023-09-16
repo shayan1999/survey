@@ -1,5 +1,7 @@
+import { useTranslation } from "react-i18next";
 import { questionType } from "../../utils/questions/types";
 import Answers from "./Answers";
+import { LangSwitcher } from "../../components/LangSwitcher";
 
 type Props = {
   questions: questionType[];
@@ -14,6 +16,7 @@ const SurveyBasics = ({
   setQuestion,
   setPoint,
 }: Props) => {
+  const { t } = useTranslation();
   const submitAnswer = (point: number, showResult?: boolean) => {
     document.getElementById("question-header")?.classList.add("hide-question");
     document.getElementById("question-text")?.classList.add("hide-question");
@@ -40,16 +43,20 @@ const SurveyBasics = ({
               style={{
                 width: `${((questionNumber + 1) / questions.length) * 100}%`,
               }}
-            />
-            {/* <div className="empty-progress" /> */}
+            >{`${(((questionNumber + 1) / questions.length) * 100).toFixed(
+              2
+            )}%`}</div>
           </div>
         </div>
         <h2 id="question-header" className="text-white mb-3 animation">
-          Question {questionNumber + 1}
+          {t("questions:question")} {questionNumber + 1}
         </h2>
         <span id="question-text" className="quetsion-text animation">
           {questions[questionNumber].description}
         </span>
+        <div style={{ position: "absolute", right: 20, top: 50 }}>
+          <LangSwitcher />
+        </div>
       </div>
       <div className="w-100 flex-1 bg-white justify-content-center align-items-center d-flex p-4">
         <Answers
