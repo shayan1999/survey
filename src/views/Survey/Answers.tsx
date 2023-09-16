@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   submit: (point: number, showResult?: boolean) => void;
@@ -6,6 +7,7 @@ type Props = {
 };
 
 const Answers = ({ submit, isLastQuestion }: Props) => {
+  const { t } = useTranslation();
   const [answer, setAnswer] = useState<number | null>(null);
   const answers = [-2, -1, 0, 1, 2];
 
@@ -52,7 +54,11 @@ const Answers = ({ submit, isLastQuestion }: Props) => {
                 />
                 {item % 2 === 0 ? (
                   <span className="answer-hint mt-4">
-                    {item < 0 ? "Disagree" : item === 0 ? "Neutral" : "Agree"}
+                    {item < 0
+                      ? t("questions:situations:disagree")
+                      : item === 0
+                      ? t("questions:situations:neutral")
+                      : t("questions:situations:agree")}
                   </span>
                 ) : (
                   <span className="answer-hint mt-4">.</span>
@@ -69,7 +75,7 @@ const Answers = ({ submit, isLastQuestion }: Props) => {
             className="submit-button flex-1 primary-button"
             disabled={answer === null}
           >
-            get result
+            {t("questions:buttons:result")}
           </button>
         ) : (
           <button
@@ -77,7 +83,7 @@ const Answers = ({ submit, isLastQuestion }: Props) => {
             className="submit-button flex-1 green-button"
             disabled={answer === null}
           >
-            submit answer
+            {t("questions:buttons:submit")}
           </button>
         )}
       </div>

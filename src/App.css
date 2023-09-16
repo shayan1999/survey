@@ -123,6 +123,12 @@
   background-color: #449c40;
   height: 100%;
   transition: 0.5s;
+  font-size: 8px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .empty-progress{
@@ -140,3 +146,111 @@
   opacity: 0;
 }
 
+
+/* consent ------------- */
+
+.consents-decription{
+  color: rgba(270, 270, 270, 0.6);
+  margin-bottom: 8px;
+}
+
+.check-container{
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.custom-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.check-container:hover input ~ .custom-checkmark  {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-container input:checked ~ .custom-checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.custom-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.check-container input:checked ~ .custom-checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-container .custom-checkmark:after {
+  left: 4px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/* selector */
+
+.selector-custom{
+  background-color: #282c34 !important;
+  color: white !important;
+  cursor: pointer !important;
+  /* border: 1px solid white; */
+}
+
+.max-phone{
+  max-width: 700px;
+}
+
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #282c34; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #363636; 
+}
