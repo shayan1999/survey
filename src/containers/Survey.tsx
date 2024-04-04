@@ -8,8 +8,7 @@ import { useSurveyStore } from "../store/survey";
 const Survey = () => {
   const { t } = useTranslation();
   let navigate = useNavigate();
-  const { setAnswer, setQuestionSubmit, answers } = useSurveyStore();
-  console.log(answers);
+  const { setAnswer, setQuestionSubmit } = useSurveyStore();
   const questions: questionType[] = t("questions:questions", {
     returnObjects: true,
   });
@@ -17,7 +16,7 @@ const Survey = () => {
   const [questionNumber, setQuestionNumber] = useState(0);
 
   const setPointFunc = (newPoint: number, showResult?: boolean) => {
-    setAnswer(newPoint + 2, questionNumber);
+    setAnswer(newPoint, questionNumber);
     if (showResult) {
       setQuestionSubmit(true);
       navigate(`/survey/demography`);
