@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/survey/static/css/main.bfb9b66d.css",
-    "main.js": "/survey/static/js/main.caeee0ac.js",
+    "main.js": "/survey/static/js/main.554b3537.js",
     "static/js/787.f69abaa4.chunk.js": "/survey/static/js/787.f69abaa4.chunk.js",
     "static/media/IranSans.ttf": "/survey/static/media/IranSans.8c2ed8fb0154947263c5.ttf",
     "index.html": "/survey/index.html",
     "main.bfb9b66d.css.map": "/survey/static/css/main.bfb9b66d.css.map",
-    "main.caeee0ac.js.map": "/survey/static/js/main.caeee0ac.js.map",
+    "main.554b3537.js.map": "/survey/static/js/main.554b3537.js.map",
     "787.f69abaa4.chunk.js.map": "/survey/static/js/787.f69abaa4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bfb9b66d.css",
-    "static/js/main.caeee0ac.js"
+    "static/js/main.554b3537.js"
   ]
 }
