@@ -1,4 +1,3 @@
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -10,34 +9,34 @@
   color: white;
 }
 
-.basic-container{
+.basic-container {
   background-color: #282c34;
   width: 100vw;
   height: 100vh;
   padding-bottom: 10vh;
 }
 
-.flex-1{
+.flex-1 {
   flex: 1;
 }
 
-.bg-white{
+.bg-white {
   background-color: white;
 }
 
-.answers-box{
+.answers-box {
   width: 100%;
   max-width: 420px;
 }
 
-.quetsion-text{
+.quetsion-text {
   color: lightgray;
   font-size: 22px;
   text-align: center;
   max-width: 420px;
 }
 
-.circle-answer{
+.circle-answer {
   width: 48px;
   height: 48px;
   border-radius: 24px;
@@ -46,30 +45,30 @@
   cursor: pointer;
 }
 
-.fill-circle{
+.fill-circle {
   background-color: #449c40;
 }
 
-.half-opacity{
+.half-opacity {
   opacity: 0.5;
 }
 
-.answer-hint{
+.answer-hint {
   color: #282c34;
   font-weight: normal;
   font-size: 14px;
   text-align: center;
 }
 
-.submit-buttons-container{
+.submit-buttons-container {
   display: flex;
   flex-direction: row;
   width: 100%;
   max-width: 420px;
-  align-self:flex-end;
+  align-self: flex-end;
 }
 
-.submit-button{
+.submit-button {
   padding: 12px;
   font-size: 16px;
   font-weight: bold;
@@ -79,21 +78,21 @@
   border: none;
 }
 
-.submit-button:disabled{
+.submit-button:disabled {
   background-color: gray;
 }
 
-.green-button{
+.green-button {
   background-color: #449c40;
   color: white;
 }
 
-.primary-button{
+.primary-button {
   background-color: #1b5fde;
   color: white;
 }
 
-.chart-background{
+.chart-background {
   background-color: lightgray;
   border-radius: 8px;
   padding: 12px;
@@ -101,7 +100,7 @@
   max-width: 420px;
 }
 
-.progress-container{
+.progress-container {
   position: absolute;
   top: 8px;
   width: 100vw;
@@ -110,7 +109,7 @@
   align-items: center;
 }
 
-.progress-bar-custom{
+.progress-bar-custom {
   width: 90%;
   height: 12px;
   border-radius: 4px;
@@ -119,7 +118,7 @@
   flex-direction: row;
 }
 
-.fill-progress{
+.fill-progress {
   background-color: #449c40;
   height: 100%;
   transition: 0.5s;
@@ -131,30 +130,29 @@
   justify-content: flex-end;
 }
 
-.empty-progress{
+.empty-progress {
   background-color: lightgray;
   height: 100%;
   flex: 1;
   transition: 0.5s;
 }
 
-.animation{
+.animation {
   transition: 0.5s;
 }
 
-.hide-question{
+.hide-question {
   opacity: 0;
 }
 
-
 /* consent ------------- */
 
-.consents-decription{
+.consents-decription {
   color: rgba(270, 270, 270, 0.6);
   margin-bottom: 8px;
 }
 
-.check-container{
+.check-container {
   display: block;
   position: relative;
   margin-bottom: 12px;
@@ -164,6 +162,20 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.text-input {
+  width: 100%;
+  border-radius: 8px;
+  border-color: lightgray;
+  transition: 0.05s;
+  padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.text-input :focus&:hover {
+  border-color: gray;
 }
 
 .check-container input {
@@ -185,13 +197,13 @@
 }
 
 /* On mouse-over, add a grey background color */
-.check-container:hover input ~ .custom-checkmark  {
+.check-container:hover input ~ .custom-checkmark {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
 .check-container input:checked ~ .custom-checkmark {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -219,17 +231,16 @@
   transform: rotate(45deg);
 }
 
-
 /* selector */
 
-.selector-custom{
+.selector-custom {
   background-color: #282c34 !important;
   color: white !important;
   cursor: pointer !important;
   /* border: 1px solid white; */
 }
 
-.max-phone{
+.max-phone {
   max-width: 700px;
 }
 
@@ -242,15 +253,15 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #282c34; 
+  background: #282c34;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #555; 
+  background: #555;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #363636; 
+  background: #363636;
 }

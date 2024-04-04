@@ -1,6 +1,6 @@
-import axios from 'axios';
+import axios from "axios";
 
-const BASE_URL= 'test.com';
+const BASE_URL = "http://api.indecisionbook.com";
 
 export const client = axios.create({
   baseURL: BASE_URL,

@@ -5,20 +5,23 @@ import LanguageDetector from "i18next-browser-languagedetector";
 // english imports
 import consentEnglish from "./english/consent.json";
 import questionsEnglish from "./english/questions.json";
+import demographyEnglish from "./english/demography.json";
 
 // persian imports
 import consentPersian from "./persian/consent.json";
 import questionsPersian from "./persian/questions.json";
-
+import demographyPersian from "./persian/demography.json";
 
 const resources = {
   en: {
     consent: consentEnglish,
-    questions: questionsEnglish
+    questions: questionsEnglish,
+    demography: demographyEnglish,
   },
   fa: {
     consent: consentPersian,
-    questions: questionsPersian
+    questions: questionsPersian,
+    demography: demographyPersian,
   },
 };
 

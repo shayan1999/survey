@@ -33,9 +33,9 @@ const Answers = ({ submit, isLastQuestion }: Props) => {
       <div />
       <div className="d-flex flex-column w-100">
         <div className="d-flex flex-row justify-content-between align-items-center w-100">
-          {answers.map((item) => {
+          {answers.map((item, idx) => {
             return (
-              <div className="d-flex flex-column align-items-center">
+              <div key={idx} className="d-flex flex-column align-items-center">
                 <div
                   key={`key-${item}`}
                   id={`circle-${item}`}

@@ -1,0 +1,23 @@
+{
+  "description": "There is one Step before we can give you the results please fill these data about yourself so we can give you better results",
+  "genders": {
+    "man": "man",
+    "woman": "woman",
+    "others": "others",
+    "label": "gender"
+  },
+  "age": {
+    "placeholder": "select your age",
+    "label": "age"
+  },
+  "education": {
+    "placeholder": "education",
+    "label": "select your educational degree"
+  },
+  "country": {
+    "label": "living country"
+  },
+  "buttons": {
+    "submit": "submit"
+  }
+}

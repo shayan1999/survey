@@ -21,7 +21,7 @@ const SurveyBasics = ({
     document.getElementById("question-header")?.classList.add("hide-question");
     document.getElementById("question-text")?.classList.add("hide-question");
     setTimeout(() => {
-      setPoint(questions[questionNumber].reversed ? -point : point, showResult);
+      setPoint(point, showResult);
       if (questions.length - 1 > questionNumber)
         setQuestion(questionNumber + 1);
       document
