@@ -45,6 +45,7 @@ const Result = ({
               start={-100}
               end={score}
               duration={2.75}
+              delay={0}
               onEnd={() => {
                 setAnimationEnd(true);
                 setTimeout(() => {
