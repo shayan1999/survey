@@ -11,9 +11,12 @@ export default function RouterProvider() {
       <Route path="/survey">
         <Route path="" element={<Consent />} />
         <Route path="questions" element={<Survey />} />
-        <Route path="result" element={<Result />} />
+        <Route path="result" element={<Navigate to="/" replace />} />
+        <Route path="result/:score/:gender/:ageGroup" element={<Result />} />
         <Route path="demography" element={<Demography />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }

@@ -1,19 +1,28 @@
 @font-face {
-  font-family: 'IranSans';
-  src: url('./fonts/IranSans.ttf');
+  font-family: "IranSans";
+  src: url("./fonts/IranSans.ttf");
 }
 
 body {
   margin: 0;
-  font-family: 'IranSans';
+  font-family: "IranSans";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-span, h1, h2, h3, h4, h5, h6, button, div{
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+div {
   font-family: "IranSans", sans-serif;
 }
 
 code {
-  font-family: 'IranSans';
+  font-family: "IranSans";
 }

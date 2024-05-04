@@ -16,6 +16,16 @@
   padding-bottom: 10vh;
 }
 
+.results-container {
+  background-color: #282c34;
+  width: 100vw;
+}
+
+.score-container {
+  background-color: #606060;
+  width: 100vw;
+}
+
 .flex-1 {
   flex: 1;
 }
@@ -29,7 +39,7 @@
   max-width: 420px;
 }
 
-.quetsion-text {
+.question-text {
   color: lightgray;
   font-size: 22px;
   text-align: center;
@@ -264,4 +274,10 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #363636;
+}
+
+.result-image {
+  width: 100%;
+  max-height: 300px;
+  max-width: 300px;
 }

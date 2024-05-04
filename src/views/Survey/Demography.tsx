@@ -46,14 +46,18 @@ const DemographyView = ({ data, onChange, onSubmit, loading }: Props) => {
           <label className="text-white">
             {t("demography:education.label")}
           </label>
-          <input
-            placeholder={t("demography:education.placeholder")}
+          <select
             className="text-input"
-            type="text"
             name="education"
-            required
             onChange={(e) => onChange(e.target)}
-          />
+          >
+            <option value="Highschool">
+              {t("demography:education.highschool")}
+            </option>
+            <option value="Ba/BSc">{t("demography:education.ba/bs")}</option>
+            <option value="MSc">{t("demography:education.msc")}</option>
+            <option value="PhD/above">{t("demography:education.phd")}</option>
+          </select>
           <label className="text-white">{t("demography:country.label")}</label>
           <CountryDropdown
             value={data.pool}
