@@ -1,0 +1,31 @@
+{
+  "yourScore": "Your score is:",
+  "yourPlots": "Plots of your results:",
+  "descriptions": [
+    {
+      "title": "THE DECISIVE DYNAMO",
+      "hint": "(Low indecisiveness)",
+      "description": "You are a paragon of resolve. You always think that every problem has a solution, and are certain you can find it. You make choices with unwavering confidence and harvest no regret. Your attraction for being in charge however may hide a need to maintain control and cut you from listening to others."
+    },
+    {
+      "title": "THE BALANCED NAVIGATOR",
+      "hint": "(Slightly indecisive)",
+      "description": "In the tempest of choices, you emerge as a bastion of tranquility and composure. While you don't shy away from the crossroads, your inner wisdom allows you to pause and reflect. With finesse and reflection, you traverse the tumultuous waters of indecision, navigating with a steady hand and a serene heart"
+    },
+    {
+      "title": "THE CONNOISSEUR",
+      "hint": "(Moderately Indecisive)",
+      "description": "You navigate the middle path with a measured gait, never pretending to possess confidence you don't feel. Your indecision may linger, yet you've honed the art of patience, avoiding hasty commitments without losing yourself entirely. While you may wrestle with self-blame for your hesitance, it also gifts you with acute sensitivity to unsolvable dilemmas, rendering you a compassionate and attentive listener."
+    },
+    {
+      "title": "THE MAESTRO",
+      "hint": "(Highly indecisive)",
+      "description": "You reign supreme in the realm of avoiding or postponing decisions! Your indecision knows no bounds, as each choice appears as a labyrinth of endless possibilities. Sensitivity to uncertainty may be your forte. However, take heed that the torment of choice doesn't overwhelm you entirely! Amidst the haze of hesitation, clarity may occasionally find its way to you... in due time"
+    }
+  ],
+  "plotAll": "your indecisiveness / all people",
+  "plotAge": "your indecisiveness / your age groups",
+  "plotGender": "your indecisiveness / your gender",
+  "above": "Above Your Score",
+  "below": "Below Your Score"
+}

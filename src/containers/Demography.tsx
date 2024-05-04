@@ -9,12 +9,12 @@ const Demography = () => {
   const [data, setData] = useState<{
     age: string;
     gender: "man" | "woman" | "others";
-    education: string;
+    education: "Highschool" | "Ba/BSc" | "MSc" | "PhD/above";
     pool: string;
   }>({
     age: "",
     gender: "man",
-    education: "",
+    education: "Highschool",
     pool: "",
   });
   const { isLoading, mutate } = useAddResult();
@@ -35,9 +35,8 @@ const Demography = () => {
           education: data.education,
         },
         {
-          onSuccess: (res) => {
-            console.log(res.message);
-            navigate("/survey/result?point=12");
+          onSuccess: ({ score, ageGroup }) => {
+            navigate(`/survey/result/${score}/${data.gender}/${ageGroup}`);
           },
           onError: (e) => console.error(e),
         }

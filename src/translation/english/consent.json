@@ -1,15 +1,33 @@
 {
-    "title": "Informed Consent Form",
-    "data": [
-        {"title": "Title of Study", "description": "[your study title will come here"},
-        {"title": "Introduction", "description": "You are invited to participate in a research study. Before you decide whether or not to participate, it is important that you understand the nature of the study and what your involvement will entail. Please take a moment to read this form carefully and ask any questions you may have before agreeing to participate."},
-        {"title": "Purpose of the Study", "description": "The purpose of this study is to gain insights into how people make decisions and experience indecision in various aspects of life. By participating, you will contribute valuable information that can help us better understand human decision-making processes."},
-        {"title": "Procedures", "description": "If you choose to participate, you will be asked to complete a survey that includes questions about your experiences with decision-making in different life situations. Your responses will be kept confidential and will be used for research purposes only."},
-        {"title": "Confidentiality", "description": "Your responses will be kept confidential to the extent permitted by law. We will not collect any personally identifiable information, and your individual responses will not be shared with anyone outside of the research team. Your data will be stored securely and will only be analyzed in aggregate form."},
-        {"title": "Voluntary Participation", "description": "Participation in this study is entirely voluntary, and you are free to withdraw at any time without penalty. If you decide to withdraw, your partial or complete responses will not be used, and your data will be deleted."}
-    ],
-    "agreement": "I have read and understand the information provided in this Informed Consent Form. I voluntariy agree to participate in this research study.",
-    "button":{
-        "start": "Start Survey"
+  "title": "Informed Consent Form",
+  "data": [
+    {
+      "title": "Title of Study",
+      "description": "Decision-Making"
+    },
+    {
+      "title": "Introduction",
+      "description": "You are invited to take a survey that assess your propensity to indecision. This survey is a companion to the book  indecision written by Ophelia Deroy and Bahador Bahrami."
+    },
+    {
+      "title": "Purpose of the Study",
+      "description": "The primary objective of this survey is to provide insights into the decision-making process and experiences of indecision across various life domains. Your participation not only offers personal enlightenment but also contributes valuable data to enhance our understanding of human cognition."
+    },
+    {
+      "title": "Procedures",
+      "description": "If you choose to participate, you will be asked to complete a survey that includes questions about your experiences with decision-making in different life situations. Your responses will be kept confidential and will be used for research purposes only."
+    },
+    {
+      "title": "Confidentiality",
+      "description": "Your responses will be kept confidential and protected European Union's General Data Protection Regulations (GDPR) law. We do not collect any personally identifiable information from you and your responses will only for for research purpose. Your data will be stored securely and will only be analyzed in aggregate form."
+    },
+    {
+      "title": "Voluntary Participation",
+      "description": "Participation in this study is entirely voluntary, affording you the liberty to withdraw at any point without incurring any repercussions. Simply closing your browser window suffices to withdraw from the survey. In the event of withdrawal, neither partial nor complete responses will be utilized, and your data will be deleted."
     }
+  ],
+  "agreement": "I have read and understand the information provided in this Informed Consent Form. I voluntarily agree to participate in this research study.",
+  "button": {
+    "start": "Start Survey"
+  }
 }

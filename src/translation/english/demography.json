@@ -12,7 +12,11 @@
   },
   "education": {
     "placeholder": "education",
-    "label": "select your educational degree"
+    "label": "select your educational degree",
+    "highschool": "Highschool",
+    "ba/bs": "BA/BSc",
+    "msc": "MSc",
+    "phd": "PhD or above"
   },
   "country": {
     "label": "living country"

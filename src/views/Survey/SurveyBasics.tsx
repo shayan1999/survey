@@ -51,7 +51,7 @@ const SurveyBasics = ({
         <h2 id="question-header" className="text-white mb-3 animation">
           {t("questions:question")} {questionNumber + 1}
         </h2>
-        <span id="question-text" className="quetsion-text animation">
+        <span id="question-text" className="question-text animation">
           {questions[questionNumber].description}
         </span>
         <div style={{ position: "absolute", right: 20, top: 50 }}>
