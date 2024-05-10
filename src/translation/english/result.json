@@ -1,6 +1,6 @@
 {
   "yourScore": "Your score is:",
-  "yourPlots": "Plots of your results:",
+  "yourPlots": "You score",
   "descriptions": [
     {
       "title": "THE DECISIVE DYNAMO",
@@ -23,9 +23,9 @@
       "description": "You reign supreme in the realm of avoiding or postponing decisions! Your indecision knows no bounds, as each choice appears as a labyrinth of endless possibilities. Sensitivity to uncertainty may be your forte. However, take heed that the torment of choice doesn't overwhelm you entirely! Amidst the haze of hesitation, clarity may occasionally find its way to you... in due time"
     }
   ],
-  "plotAll": "your indecisiveness / all people",
-  "plotAge": "your indecisiveness / your age groups",
-  "plotGender": "your indecisiveness / your gender",
-  "above": "Above Your Score",
-  "below": "Below Your Score"
+  "plotAll": "you compared to everyone",
+  "plotAge": "you compared to your age group",
+  "plotGender": "you compared to your gender group",
+  "above": "more indecisive than you",
+  "below": "less indecisive than you"
 }

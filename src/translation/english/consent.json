@@ -1,13 +1,13 @@
 {
-  "title": "Informed Consent Form",
+  "title": "What is my indecision score?",
   "data": [
     {
-      "title": "Title of Study",
-      "description": "Decision-Making"
+      "title": "To proceed to the survey, please read through this consent form and tick the box at the bottom",
+      "description": ""
     },
     {
       "title": "Introduction",
-      "description": "You are invited to take a survey that assess your propensity to indecision. This survey is a companion to the book  indecision written by Ophelia Deroy and Bahador Bahrami."
+      "description": "You are invited to take a survey that assess your propensity to indecision. This survey is a companion to the book INDECISION written by Ophelia Deroy and Bahador Bahrami."
     },
     {
       "title": "Purpose of the Study",
@@ -19,7 +19,7 @@
     },
     {
       "title": "Confidentiality",
-      "description": "Your responses will be kept confidential and protected European Union's General Data Protection Regulations (GDPR) law. We do not collect any personally identifiable information from you and your responses will only for for research purpose. Your data will be stored securely and will only be analyzed in aggregate form."
+      "description": "Your responses will be kept confidential and protected by European Union's General Data Protection Regulations (GDPR) law. We do not collect any personally identifiable information from you and your responses will only be used for research purpose. Your data will be stored securely and will only be analyzed in aggregate form."
     },
     {
       "title": "Voluntary Participation",

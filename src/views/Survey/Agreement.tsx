@@ -54,7 +54,11 @@ export default Agreement;
 const detailsComponent = (title: string, description: string, idx: number) => {
   return (
     <span className="consents-decription mb-4" key={idx}>
-      <b className="text-white">{title}:</b> <br />
+      <b className="text-white">
+        {title}
+        {description ? ":" : ""}
+      </b>{" "}
+      <br />
       {description}
     </span>
   );

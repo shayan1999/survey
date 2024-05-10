@@ -75,6 +75,8 @@ const GaussianPlot: React.FC<GaussianPlotProps> = ({
         borderColor: "rgb(255, 99, 132)",
         backgroundColor: "rgba(255, 99, 132, 0.1)",
         fill: true,
+        pointRadius: 0,
+        pointHoverRadius: 0,
       },
       {
         label: t("result:above"),
@@ -84,6 +86,8 @@ const GaussianPlot: React.FC<GaussianPlotProps> = ({
         borderColor: "rgb(75, 192, 192)",
         backgroundColor: "rgba(75, 192, 192, 0.1)",
         fill: true,
+        pointRadius: 0,
+        pointHoverRadius: 0,
       },
     ];
 
@@ -97,6 +101,19 @@ const GaussianPlot: React.FC<GaussianPlotProps> = ({
 
   const options = {
     responsive: true,
+    plugins: {
+      legend: {
+        position: "bottom",
+      },
+      tooltip: {
+        enabled: true,
+        position: "nearest",
+      },
+    },
+    interaction: {
+      intersect: false,
+      mode: "index",
+    },
     scales: {
       y: {
         beginAtZero: true,
@@ -112,14 +129,14 @@ const GaussianPlot: React.FC<GaussianPlotProps> = ({
 
   return (
     <div
-      className={`w-100 mb-5 max-phone animation ${
+      className={`w-100 mb-5 mt-5 max-phone animation ${
         show ? "opacity-100" : "opacity-0"
       }`}
     >
-      <Line data={data} options={options as any} />
-      <div className={`d-flex flex-row justify-content-center mt-3 `}>
+      <div className={`d-flex flex-row justify-content-center mt-3 mb-3`}>
         <span className="question-text">{t(`result:${plotName}`)}</span>
       </div>
+      <Line data={data} options={options as any} />
     </div>
   );
 };
