@@ -55,10 +55,10 @@ const Answers = ({ submit, isLastQuestion }: Props) => {
                 {item % 2 === 0 ? (
                   <span className="answer-hint mt-4">
                     {item < 0
-                      ? t("questions:situations:disagree")
+                      ? t("questions:indecision:situations:disagree")
                       : item === 0
-                      ? t("questions:situations:neutral")
-                      : t("questions:situations:agree")}
+                      ? t("questions:indecision:situations:neutral")
+                      : t("questions:indecision:situations:agree")}
                   </span>
                 ) : (
                   <span className="answer-hint mt-4">.</span>
@@ -75,7 +75,8 @@ const Answers = ({ submit, isLastQuestion }: Props) => {
             className="submit-button flex-1 primary-button"
             disabled={answer === null}
           >
-            {t("questions:buttons:result")}
+            {/* TODO: change the strategy of dictionary here for a more dynamic way */}
+            {t("questions:indecision:buttons:result")}
           </button>
         ) : (
           <button
@@ -83,7 +84,7 @@ const Answers = ({ submit, isLastQuestion }: Props) => {
             className="submit-button flex-1 green-button"
             disabled={answer === null}
           >
-            {t("questions:buttons:submit")}
+            {t("questions:indecision:buttons:submit")}
           </button>
         )}
       </div>

@@ -16,7 +16,7 @@ const Agreement = ({ submit }: { submit: () => void }) => {
           <LangSwitcher />
         </div>
         <h2 className="text-white mb-5">{t("consent:title")}</h2>
-        <div className="flex-1 d-flex flex-column w-100">
+        <div className="flex-1 d-flex flex-column w-100 pb-5">
           {data?.map((item, idx) => {
             return detailsComponent(item.title, item.description, idx);
           })}
@@ -32,13 +32,13 @@ const Agreement = ({ submit }: { submit: () => void }) => {
                 <span className="custom-checkmark" />
               </label>
             </div>
-            <h5 className="text-white" onClick={() => setAgree(!agree)}>
+            <h5 className="text-white pb-3" onClick={() => setAgree(!agree)}>
               {t("consent:agreement")}
             </h5>
           </div>
           <button
             disabled={!agree}
-            className="submit-button flex-1 primary-button my-3"
+            className="submit-button flex-1 primary-button mb-1 position-fixed bottom-0 translate-middle start-50 w-100 max-phone"
             onClick={submit}
           >
             {t("consent:button:start")}

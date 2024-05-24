@@ -1,0 +1,74 @@
+{
+  "questions": [
+    {
+      "description": "I don't like situations that are uncertain.",
+      "reversed": false
+    },
+    {
+      "description": "I dislike questions which could be answered in many different ways.",
+      "reversed": false
+    },
+    {
+      "description": "I find that a well ordered life with regular hours suits my temperament.",
+      "reversed": false
+    },
+    {
+      "description": "I feel uncomfortable when I don't understand the reason why an event occurred in my life.",
+      "reversed": false
+    },
+    {
+      "description": "I feel irritated when one person disagrees with what everyone else in a group believes.",
+      "reversed": false
+    },
+    {
+      "description": "I don't like to go into a situation without knowing what I can expect from it.",
+      "reversed": false
+    },
+    {
+      "description": "When I have made a decision, I feel relieved",
+      "reversed": true
+    },
+    {
+      "description": "When I am confronted with a problem, I'm dying to reach a solution very quickly.",
+      "reversed": true
+    },
+    {
+      "description": "I would quickly become impatient and irritated if I would not find a solution to a problem immediately.",
+      "reversed": false
+    },
+    {
+      "description": "I don't like to be with people who are capable of unexpected actions.",
+      "reversed": false
+    },
+    {
+      "description": "I dislike it when a person's statement could mean many different things.",
+      "reversed": false
+    },
+    {
+      "description": "I find that establishing a consistent routine enables me to enjoy life more.",
+      "reversed": false
+    },
+    {
+      "description": "I enjoy having a clear and structured mode of life.",
+      "reversed": false
+    },
+    {
+      "description": "I do not usually consult many different opinions before forming my own view.",
+      "reversed": true
+    },
+    {
+      "description": "I dislike unpredictable situations.",
+      "reversed": false
+    }
+  ],
+  "question": "Question",
+  "situations": {
+    "disagree": "Disagree",
+    "neutral": "Neutral",
+    "agree": "Agree"
+  },
+  "buttons": {
+    "result": "get result",
+    "submit": "submit answer"
+  }
+}

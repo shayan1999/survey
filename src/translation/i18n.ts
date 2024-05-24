@@ -4,27 +4,36 @@ import LanguageDetector from "i18next-browser-languagedetector";
 
 // english imports
 import consentEnglish from "./english/consent.json";
-import questionsEnglish from "./english/questions.json";
+import questionsEnglish from "./english/questions/questions.json";
+import closureQuestionsEnglish from "./english/questions/closure.json";
 import demographyEnglish from "./english/demography.json";
 import resultEnglish from "./english/result.json";
 
 // persian imports
 import consentPersian from "./persian/consent.json";
-import questionsPersian from "./persian/questions.json";
+import questionsPersian from "./persian/questions/questions.json";
+import closureQuestionsPersian from "./persian/questions/closure.json";
 import demographyPersian from "./persian/demography.json";
+import resultPersian from "./persian/result.json";
 
 const resources = {
   en: {
     consent: consentEnglish,
-    questions: questionsEnglish,
+    questions: {
+      indecision: questionsEnglish,
+      closure: closureQuestionsEnglish,
+    },
     demography: demographyEnglish,
     result: resultEnglish,
   },
   fa: {
     consent: consentPersian,
-    questions: questionsPersian,
+    questions: {
+      indecision: questionsPersian,
+      closure: closureQuestionsPersian,
+    },
     demography: demographyPersian,
-    result: resultEnglish,
+    result: resultPersian,
   },
 };
 

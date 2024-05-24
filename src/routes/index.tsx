@@ -1,8 +1,9 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import Survey from "../containers/Survey";
+import Survey from "../containers/Surveys/Survey";
 import Result from "../containers/Result";
 import Consent from "../containers/Consent";
 import Demography from "../containers/Demography";
+import Closure from "../containers/Surveys/Closure";
 
 export default function RouterProvider() {
   return (
@@ -15,6 +16,11 @@ export default function RouterProvider() {
         <Route path="result/:score/:gender/:ageGroup" element={<Result />} />
         <Route path="demography" element={<Demography />} />
         <Route path="*" element={<Navigate to="/" replace />} />
+      </Route>
+      <Route path="/closure">
+        <Route path="" element={<Consent />} />
+        <Route path="questions" element={<Closure />} />
+        <Route path="*" element={<Navigate to="/closure" replace />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

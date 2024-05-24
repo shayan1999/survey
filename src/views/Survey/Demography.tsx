@@ -2,6 +2,7 @@ import React from "react";
 import { CountryDropdown } from "react-country-region-selector";
 import { useTranslation } from "react-i18next";
 import ReactLoading from "react-loading";
+import { LangSwitcher } from "../../components/LangSwitcher";
 
 type Props = {
   data: {
@@ -20,6 +21,9 @@ const DemographyView = ({ data, onChange, onSubmit, loading }: Props) => {
   return (
     <div className="basic-container d-flex flex-column justify-content-center align-items-center">
       <div className="w-100 flex-1 d-flex flex-column justify-content-center align-items-center p-4 answers-box">
+        <div className="d-flex flex-row justify-content-end w-100 mb-3">
+          <LangSwitcher />
+        </div>
         <span className="text-white text-center mb-4">
           {t("demography:description")}
         </span>

@@ -6,6 +6,7 @@ import { StatsType } from "../../apis/services/useGetStats";
 import MetricIcon from "../../assets/MetricIcon.svg";
 import Loading from "react-loading";
 import { t } from "i18next";
+import { LangSwitcher } from "../../components/LangSwitcher";
 
 type Props = {
   score: number;
@@ -38,6 +39,9 @@ const Result = ({
           <span className="fs-3 fw-bolder text-white">
             {t("result:yourScore")}
           </span>
+          <div className="d-flex flex-row">
+            <LangSwitcher />
+          </div>
         </div>
         {!isLoading && (
           <>
