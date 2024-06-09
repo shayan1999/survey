@@ -1,21 +1,5 @@
 export type surveyStateType = {
-  answers: [
-    number,
-    number,
-    number,
-    number,
-    number,
-    number,
-    number,
-    number,
-    number,
-    number,
-    number,
-    number,
-    number,
-    number,
-    number
-  ];
+  answers: number[];
   questionsAnswered: boolean;
   pool: string;
   education: string;
@@ -24,7 +8,7 @@ export type surveyStateType = {
 };
 
 export type surveyStateStore = surveyStateType & {
-  setAnswer: (value: number, questionNumber: number) => void;
+  setAnswer: (value: number, question: number) => void;
   setDemography: (
     pool: string,
     education: string,

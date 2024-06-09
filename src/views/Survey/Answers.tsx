@@ -4,12 +4,12 @@ import { useTranslation } from "react-i18next";
 type Props = {
   submit: (point: number, showResult?: boolean) => void;
   isLastQuestion: boolean;
+  answers: number[];
 };
 
-const Answers = ({ submit, isLastQuestion }: Props) => {
+const Answers = ({ submit, isLastQuestion, answers }: Props) => {
   const { t } = useTranslation();
   const [answer, setAnswer] = useState<number | null>(null);
-  const answers = [-2, -1, 0, 1, 2];
 
   const answerSelect = (id: number | null) => {
     setAnswer(id);
@@ -35,37 +35,38 @@ const Answers = ({ submit, isLastQuestion }: Props) => {
         <div className="d-flex flex-row justify-content-between align-items-center w-100">
           {answers.map((item, idx) => {
             return (
-              <div key={idx} className="d-flex flex-column align-items-center">
-                <div
-                  key={`key-${item}`}
-                  id={`circle-${item}`}
-                  className="circle-answer"
-                  onClick={() => answerSelect(item)}
-                  onMouseOut={() =>
-                    document
-                      .getElementById(`circle-${item}`)
-                      ?.classList.remove("half-opacity")
-                  }
-                  onMouseOver={() =>
-                    document
-                      .getElementById(`circle-${item}`)
-                      ?.classList.add("half-opacity")
-                  }
-                />
-                {item % 2 === 0 ? (
-                  <span className="answer-hint mt-4">
-                    {item < 0
-                      ? t("questions:indecision:situations:disagree")
-                      : item === 0
-                      ? t("questions:indecision:situations:neutral")
-                      : t("questions:indecision:situations:agree")}
-                  </span>
-                ) : (
-                  <span className="answer-hint mt-4">.</span>
-                )}
-              </div>
+              // <div key={idx} className="d-flex flex-column align-items-center">
+              <div
+                key={`key-${item}`}
+                id={`circle-${item}`}
+                className="circle-answer"
+                onClick={() => answerSelect(item)}
+                onMouseOut={() =>
+                  document
+                    .getElementById(`circle-${item}`)
+                    ?.classList.remove("half-opacity")
+                }
+                onMouseOver={() =>
+                  document
+                    .getElementById(`circle-${item}`)
+                    ?.classList.add("half-opacity")
+                }
+              />
             );
           })}
+        </div>
+        <div className="w-100 d-flex flex-row justify-content-between align-items-center">
+          <span className="answer-hint mt-4 flex-1 text-start">
+            {t("questions:indecision:situations:disagree")}
+          </span>
+          <div className="flex-1" />
+          <span className="answer-hint mt-4 flex-1">
+            {t("questions:indecision:situations:neutral")}
+          </span>
+          <div className="flex-1" />
+          <span className="answer-hint mt-4 flex-1 text-end ">
+            {t("questions:indecision:situations:agree")}
+          </span>
         </div>
       </div>
       <div className="submit-buttons-container px-4">

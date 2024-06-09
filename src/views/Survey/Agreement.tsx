@@ -2,12 +2,21 @@ import { useState } from "react";
 import { LangSwitcher } from "../../components/LangSwitcher";
 import { useTranslation } from "react-i18next";
 
-const Agreement = ({ submit }: { submit: () => void }) => {
+const Agreement = ({
+  submit,
+  survey,
+}: {
+  submit: () => void;
+  survey: "closure" | "survey";
+}) => {
   const [agree, setAgree] = useState(false);
   const { t } = useTranslation();
-  const data: { title: string; description: string }[] = t("consent:data", {
-    returnObjects: true,
-  });
+  const data: { title: string; description: string }[] = t(
+    `consent:data:${survey}`,
+    {
+      returnObjects: true,
+    }
+  );
 
   return (
     <div className="basic-container d-flex flex-column align-items-center p-4">
@@ -15,7 +24,7 @@ const Agreement = ({ submit }: { submit: () => void }) => {
         <div className="d-flex flex-row justify-content-end w-100">
           <LangSwitcher />
         </div>
-        <h2 className="text-white mb-5">{t("consent:title")}</h2>
+        <h2 className="text-white mb-5">{t(`consent:title:${survey}`)}</h2>
         <div className="flex-1 d-flex flex-column w-100 pb-5">
           {data?.map((item, idx) => {
             return detailsComponent(item.title, item.description, idx);

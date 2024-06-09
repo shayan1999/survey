@@ -1,33 +1,65 @@
 {
-  "title": "What is my indecision score?",
-  "data": [
-    {
-      "title": "To proceed to the survey, please read through this consent form and tick the box at the bottom",
-      "description": ""
-    },
-    {
-      "title": "Introduction",
-      "description": "You are invited to take a survey that assess your propensity to indecision. This survey is a companion to the book INDECISION written by Ophelia Deroy and Bahador Bahrami."
-    },
-    {
-      "title": "Purpose of the Study",
-      "description": "The primary objective of this survey is to provide insights into the decision-making process and experiences of indecision across various life domains. Your participation not only offers personal enlightenment but also contributes valuable data to enhance our understanding of human cognition."
-    },
-    {
-      "title": "Procedures",
-      "description": "If you choose to participate, you will be asked to complete a survey that includes questions about your experiences with decision-making in different life situations. Your responses will be kept confidential and will be used for research purposes only."
-    },
-    {
-      "title": "Confidentiality",
-      "description": "Your responses will be kept confidential and protected by European Union's General Data Protection Regulations (GDPR) law. We do not collect any personally identifiable information from you and your responses will only be used for research purpose. Your data will be stored securely and will only be analyzed in aggregate form."
-    },
-    {
-      "title": "Voluntary Participation",
-      "description": "Participation in this study is entirely voluntary, affording you the liberty to withdraw at any point without incurring any repercussions. Simply closing your browser window suffices to withdraw from the survey. In the event of withdrawal, neither partial nor complete responses will be utilized, and your data will be deleted."
-    }
-  ],
+  "title": {
+    "survey": "What is my indecision score?",
+    "closure": "What is my cognitive closure score?"
+  },
+  "data": {
+    "closure": [
+      {
+        "title": "To proceed to the survey, please read through this consent form and tick the box at the bottom",
+        "description": ""
+      },
+      {
+        "title": "Introduction",
+        "description": "You are invited to take a survey that assess your propensity to cognitive closure."
+      },
+      {
+        "title": "Purpose of the Study",
+        "description": "The primary objective of this survey is to provide insights into the need for cognitive closure and its impact on decision-making processes and behaviors in various life domains. Your participation not only offers personal enlightenment but also contributes valuable data to enhance our understanding of human cognition and the factors influencing the desire for definitive answers."
+      },
+      {
+        "title": "Procedures",
+        "description": " If you choose to participate, you will be asked to complete a survey that includes questions about your need for cognitive closure and how it influences your decision-making in different life situations. Your responses will be kept confidential and will be used solely for research purposes."
+      },
+      {
+        "title": "Confidentiality",
+        "description": "Your responses will be kept confidential and protected by the European Union's General Data Protection Regulation (GDPR) law. We do not collect any personally identifiable information from you, and your responses will be used solely for research purposes. Your data will be stored securely and will only be analyzed in aggregate form."
+      },
+      {
+        "title": "Voluntary Participation",
+        "description": "Participation in this study is entirely voluntary, giving you the freedom to withdraw at any point without any consequences. Simply closing your browser window will withdraw you from the survey. In the event of withdrawal, neither partial nor complete responses will be used, and your data will be deleted."
+      }
+    ],
+    "survey": [
+      {
+        "title": "To proceed to the survey, please read through this consent form and tick the box at the bottom",
+        "description": ""
+      },
+      {
+        "title": "Introduction",
+        "description": "You are invited to take a survey that assess your propensity to indecision. This survey is a companion to the book INDECISION written by Ophelia Deroy and Bahador Bahrami."
+      },
+      {
+        "title": "Purpose of the Study",
+        "description": "The primary objective of this survey is to provide insights into the decision-making process and experiences of indecision across various life domains. Your participation not only offers personal enlightenment but also contributes valuable data to enhance our understanding of human cognition."
+      },
+      {
+        "title": "Procedures",
+        "description": "If you choose to participate, you will be asked to complete a survey that includes questions about your experiences with decision-making in different life situations. Your responses will be kept confidential and will be used for research purposes only."
+      },
+      {
+        "title": "Confidentiality",
+        "description": "Your responses will be kept confidential and protected by European Union's General Data Protection Regulations (GDPR) law. We do not collect any personally identifiable information from you and your responses will only be used for research purpose. Your data will be stored securely and will only be analyzed in aggregate form."
+      },
+      {
+        "title": "Voluntary Participation",
+        "description": "Participation in this study is entirely voluntary, giving you the freedom to withdraw at any point without any consequences. Simply closing your browser window will withdraw you from the survey. In the event of withdrawal, neither partial nor complete responses will be used, and your data will be deleted."
+      }
+    ]
+  },
   "agreement": "I have read and understand the information provided in this Informed Consent Form. I voluntarily agree to participate in this research study.",
   "button": {
     "start": "Start Survey"
-  }
+  },
+  "appreciate": "Thank you for taking the time to participate in our survey. Your insights and responses are invaluable to our research and will significantly contribute to advancing our understanding of human cognition. We greatly appreciate your willingness to share your experiences and help us in this important study."
 }

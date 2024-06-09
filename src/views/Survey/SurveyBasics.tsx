@@ -2,6 +2,9 @@ import { useTranslation } from "react-i18next";
 import { questionType } from "../../utils/questions/types";
 import Answers from "./Answers";
 import { LangSwitcher } from "../../components/LangSwitcher";
+import { useLocation } from "react-router-dom";
+import { useMemo } from "react";
+import { surveyConfigs } from "../../utils/questions/configs";
 
 type Props = {
   questions: questionType[];
@@ -17,6 +20,8 @@ const SurveyBasics = ({
   setPoint,
 }: Props) => {
   const { t } = useTranslation();
+  const location = useLocation();
+  const surveyName = useMemo(() => location.pathname.split("/")[1], [location]);
   const submitAnswer = (point: number, showResult?: boolean) => {
     document.getElementById("question-header")?.classList.add("hide-question");
     document.getElementById("question-text")?.classList.add("hide-question");
@@ -63,6 +68,7 @@ const SurveyBasics = ({
         <Answers
           isLastQuestion={questions.length === questionNumber + 1}
           submit={submitAnswer}
+          answers={surveyConfigs[surveyName as "closure" | "survey"].answers}
         />
       </div>
     </div>

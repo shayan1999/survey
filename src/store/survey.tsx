@@ -2,16 +2,15 @@ import { create } from "zustand";
 import { surveyStateStore } from "./types/survey";
 
 export const useSurveyStore = create<surveyStateStore>()((set, get) => ({
-  answers: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  answers: [],
   questionsAnswered: false,
   pool: "",
   education: "",
   gender: "man",
   age: "",
-  setAnswer: (value, questionNumber) => {
-    const answers = [...get().answers];
-    answers[questionNumber] = value;
-    // @ts-ignore
+  setAnswer: (value, question) => {
+    const answers = question < get().answers.length ? [] : [...get().answers];
+    answers.push(value);
     set({ answers });
   },
   setDemography: (pool, education, age, gender) => {

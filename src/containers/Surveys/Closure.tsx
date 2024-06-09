@@ -14,7 +14,6 @@ const Closure = () => {
   });
   const data: questionType[] = [...questions];
   const [questionNumber, setQuestionNumber] = useState(0);
-
   const setPointFunc = (newPoint: number, showResult?: boolean) => {
     setAnswer(newPoint, questionNumber);
     if (showResult) {

@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import { useMemo, useState } from "react";
 import DemographyView from "../views/Survey/Demography";
 import { useSurveyStore } from "../store/survey";
 import { useAddResult } from "../apis/services/useAddResult";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useAddResultSurvey } from "../apis/services/useAddResultSurvey";
 
 const Demography = () => {
   let navigate = useNavigate();
@@ -18,29 +19,53 @@ const Demography = () => {
     pool: "",
   });
   const { isLoading, mutate } = useAddResult();
+  const { isLoading: isSurveyLoading, mutate: surveyMutate } =
+    useAddResultSurvey();
   const { setDemography, questionsAnswered, answers } = useSurveyStore();
   const onChange = ({ value, name }: { value: string; name: string }) => {
     setData({ ...data, [name]: value });
   };
+  const location = useLocation();
+  const surveyName = useMemo(() => location.pathname.split("/")[1], [location]);
+
   const onSubmit = (e: any) => {
     e.preventDefault();
     if (data.pool && questionsAnswered) {
       setDemography(data.pool, data.education, data.age, data.gender);
-      mutate(
-        {
-          answers,
-          pool: data.pool,
-          age: data.age,
-          gender: data.gender,
-          education: data.education,
-        },
-        {
-          onSuccess: ({ score, ageGroup }) => {
-            navigate(`/survey/result/${score}/${data.gender}/${ageGroup}`);
+      if (surveyName === "survey") {
+        mutate(
+          {
+            answers: answers as any,
+            pool: data.pool,
+            age: data.age,
+            gender: data.gender,
+            education: data.education,
           },
-          onError: (e) => console.error(e),
-        }
-      );
+          {
+            onSuccess: ({ score, ageGroup }) => {
+              navigate(`/survey/result/${score}/${data.gender}/${ageGroup}`);
+            },
+            onError: (e) => console.error(e),
+          }
+        );
+      } else {
+        surveyMutate(
+          {
+            answers: answers,
+            pool: data.pool,
+            age: data.age,
+            gender: data.gender,
+            education: data.education,
+            survey: surveyName,
+          },
+          {
+            onSuccess: ({ score, ageGroup }) => {
+              navigate(`/survey/result/${score}/${data.gender}/${ageGroup}`);
+            },
+            onError: (e) => console.error(e),
+          }
+        );
+      }
     } else {
       console.log("eee", questionsAnswered);
     }
@@ -51,7 +76,7 @@ const Demography = () => {
       data={data}
       onChange={onChange}
       onSubmit={onSubmit}
-      loading={isLoading}
+      loading={isLoading || isSurveyLoading}
     />
   );
 };
