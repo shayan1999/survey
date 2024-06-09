@@ -59,8 +59,8 @@ const Demography = () => {
             survey: surveyName,
           },
           {
-            onSuccess: ({ score, ageGroup }) => {
-              navigate(`/survey/result/${score}/${data.gender}/${ageGroup}`);
+            onSuccess: () => {
+              navigate(`/appreciate`);
             },
             onError: (e) => console.error(e),
           }
