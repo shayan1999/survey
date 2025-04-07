@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/survey/static/css/main.bfb9b66d.css",
-    "main.js": "/survey/static/js/main.6ab8efaa.js",
-    "static/js/787.f69abaa4.chunk.js": "/survey/static/js/787.f69abaa4.chunk.js",
-    "static/media/IranSans.ttf": "/survey/static/media/IranSans.8c2ed8fb0154947263c5.ttf",
-    "index.html": "/survey/index.html",
-    "main.bfb9b66d.css.map": "/survey/static/css/main.bfb9b66d.css.map",
-    "main.6ab8efaa.js.map": "/survey/static/js/main.6ab8efaa.js.map",
-    "787.f69abaa4.chunk.js.map": "/survey/static/js/787.f69abaa4.chunk.js.map"
+    "main.css": "/static/css/main.9a10a744.css",
+    "main.js": "/static/js/main.4f902534.js",
+    "static/js/787.f69abaa4.chunk.js": "/static/js/787.f69abaa4.chunk.js",
+    "static/media/IranSans.ttf": "/static/media/IranSans.8c2ed8fb0154947263c5.ttf",
+    "static/media/SlightlyIndecisive.png": "/static/media/SlightlyIndecisive.bb12b8c846c2c942a505.png",
+    "static/media/ModerateIndecisive.png": "/static/media/ModerateIndecisive.9ca20b6992e7ee6b5a19.png",
+    "static/media/LowIndecisive.png": "/static/media/LowIndecisive.8c0aa19076f13c0de9e2.png",
+    "static/media/MetricIcon.svg": "/static/media/MetricIcon.60608a09ff6a4ecea9a9013bed620847.svg",
+    "static/media/HighIndecisive.png": "/static/media/HighIndecisive.ef1890b2c24dc160dcde.png",
+    "index.html": "/index.html",
+    "main.9a10a744.css.map": "/static/css/main.9a10a744.css.map",
+    "main.4f902534.js.map": "/static/js/main.4f902534.js.map",
+    "787.f69abaa4.chunk.js.map": "/static/js/787.f69abaa4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfb9b66d.css",
-    "static/js/main.6ab8efaa.js"
+    "static/css/main.9a10a744.css",
+    "static/js/main.4f902534.js"
   ]
 }
