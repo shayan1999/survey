@@ -8,7 +8,7 @@ import { useSurveyStore } from "../../store/survey";
 const Survey = () => {
   const { t } = useTranslation();
   let navigate = useNavigate();
-  const { setAnswer, setQuestionSubmit } = useSurveyStore();
+  const { setAnswer, setQuestionSubmit, answers } = useSurveyStore();
   const questions: questionType[] = t("questions:indecision:questions", {
     returnObjects: true,
   });
@@ -18,8 +18,10 @@ const Survey = () => {
   const setPointFunc = (newPoint: number, showResult?: boolean) => {
     setAnswer(newPoint, questionNumber);
     if (showResult) {
+      const result= answers[0]-answers[1]-answers[2]-answers[4]-answers[5]-answers[7]-answers[8]+answers[9]+answers[10]+answers[11]+newPoint
       setQuestionSubmit(true);
-      navigate(`/survey/demography`);
+      // navigate(`/survey/indecision/demography`);
+      navigate(`/survey/indecision/result/${result}/-/-`);
     }
   };
 

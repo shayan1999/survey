@@ -26,7 +26,7 @@ const Demography = () => {
     setData({ ...data, [name]: value });
   };
   const location = useLocation();
-  const surveyName = useMemo(() => location.pathname.split("/")[1], [location]);
+  const surveyName = useMemo(() => location.pathname.split("/")[2], [location])==='indecision'?'survey':'closure';
 
   const onSubmit = (e: any) => {
     e.preventDefault();
@@ -43,7 +43,7 @@ const Demography = () => {
           },
           {
             onSuccess: ({ score, ageGroup }) => {
-              navigate(`/survey/result/${score}/${data.gender}/${ageGroup}`);
+              navigate(`/survey/indecision/result/${score}/${data.gender}/${ageGroup}`);
             },
             onError: (e) => console.error(e),
           }

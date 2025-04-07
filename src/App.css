@@ -281,3 +281,7 @@
   max-height: 300px;
   max-width: 300px;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}

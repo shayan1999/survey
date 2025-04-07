@@ -6,8 +6,7 @@ import { useMemo } from "react";
 const Consent = () => {
   let navigate = useNavigate();
   const location = useLocation();
-  const surveyName = useMemo(() => location.pathname.split("/")[1], [location]);
-
+  const surveyName = useMemo(() => location.pathname.split("/")[2], [location])==='indecision'?'survey':'closure';
   const submitConsent = () => {
     navigate("questions");
   };

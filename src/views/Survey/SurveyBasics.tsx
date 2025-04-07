@@ -21,7 +21,7 @@ const SurveyBasics = ({
 }: Props) => {
   const { t } = useTranslation();
   const location = useLocation();
-  const surveyName = useMemo(() => location.pathname.split("/")[1], [location]);
+  const surveyName = useMemo(() => location.pathname.split("/")[2], [location])==='indecision'?'survey':'closure';
   const submitAnswer = (point: number, showResult?: boolean) => {
     document.getElementById("question-header")?.classList.add("hide-question");
     document.getElementById("question-text")?.classList.add("hide-question");
